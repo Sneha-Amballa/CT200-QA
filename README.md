@@ -1,6 +1,6 @@
 # CardioTrack CT-200 Technical Documentation QA System
 
-A specialized system for parsing, structuring, comparing, and persisting technical manuals for the **CardioTrack CT-200 Home Blood Pressure Monitor** across product revisions (`v1` and `v2`).
+A specialized system for parsing, structuring, comparing, persisting, and querying technical manuals for the **CardioTrack CT-200 Home Blood Pressure Monitor** across product revisions (`v1` and `v2`).
 
 ---
 
@@ -9,6 +9,8 @@ A specialized system for parsing, structuring, comparing, and persisting technic
 ```text
 ct200-qa/
 ├── app/
+│   ├── main.py         # Step 5: FastAPI application entry point, lifecycle, and middleware
+│   ├── api/            # Step 5: Route handlers (manuals, comparisons, selections), schemas, dependencies
 │   ├── parsing/        # Step 2: PDF extraction layer (PyMuPDF, NFKC, bounding box table isolation, stitching)
 │   ├── hierarchy/      # Step 3: Section hierarchy tree builder, anomaly detection, SHA-256 content hashing
 │   ├── comparison/     # Step 3: Version comparison engine, word diffing, table row/cell diffing
@@ -18,6 +20,7 @@ ct200-qa/
 │   ├── ct200_manual.pdf     # Revision 1 manual (6 pages, A5 portrait)
 │   ├── ct200_manual_v2.pdf  # Revision 2 manual (7 pages, A5 portrait)
 │   ├── ct200.db             # Default SQLite persistent database
+│   ├── uploads/             # Securely stored uploaded PDF manuals
 │   └── qa_store/            # JSON-backed structured QA output store
 ├── docs/
 │   ├── irregularities.md    # Detailed audit of structural irregularities and physical coordinates
@@ -26,31 +29,76 @@ ct200-qa/
 │   ├── inspect_pdf.py       # PDF inspection utility
 │   └── ocr_crosscheck.py    # Dual OCR cross-check against PyMuPDF text spans
 └── tests/
-    ├── test_extract.py      # Tests for PDF extraction, table isolation, title merging, stitching
-    ├── test_hierarchy.py    # Tests for hierarchy building, anomalies (3.4 before 3.3, 2.1.1.1 skip), duplicate titles
-    ├── test_comparison.py   # Tests for 8.1 hash equality, exactly 6 substantive changes, page reflow isolation
-    └── test_persistence.py  # Tests for SQLite schema, idempotent ingestion, comparison persistence, and staleness
+    ├── test_api.py          # Step 5: FastAPI endpoint integration tests (10 tests)
+    ├── test_extract.py      # Step 2: Tests for extraction, table isolation, title merging, stitching (7 tests)
+    ├── test_hierarchy.py    # Step 3: Tests for hierarchy building, anomalies (3.4 before 3.3, skip), duplicate titles (8 tests)
+    ├── test_comparison.py   # Step 3: Tests for 8.1 hash equality, exactly 6 substantive changes, reflow isolation (10 tests)
+    └── test_persistence.py  # Step 4: Tests for SQLite schema, idempotent ingestion, comparison persistence, and staleness (7 tests)
 ```
 
 ---
 
-## Database & Persistence Layer (Step 4)
+## REST API (Step 5)
 
-### 1. Relational Models (SQLAlchemy + SQLite)
-- **`manual_versions`**: Stores manual metadata (`version_id`, `filename`, `file_hash`, `title`, `total_pages`, `total_sections`, `ingested_at`, `source_metadata`).
-- **`section_records`**: Stores section hierarchy nodes with physical sequence tracking (`order_index`), hierarchy depth (`numbering_depth`), page references (`page_references`), serialized body blocks (`body_blocks`), structured tables (`tables`), flags (`flags`), and normalized SHA-256 content hashes (`content_hash`).
-- **`version_comparisons`**: Stores pairwise version comparisons with high-level statistics and substantive change logs.
-- **`section_diff_records`**: Detailed per-section diffs distinguishing content changes (`status = "modified"`, `word_diff`, `table_diff`) from page reflows (`page_changed = True`, `content_changed = False`).
-- **`saved_qa_selections`**: User/system selection records binding a target section and snapshotting `source_content_hash` at selection/generation time.
+### Running the API Server
 
-### 2. Document-Backed QA Repository
-- **`BaseQADocumentStore`**: Abstract interface defining `save`, `get`, `list_all`, and `delete`.
-- **`JSONFileQAStore`**: Clean, file-backed JSON implementation storing structured QA documents in `data/qa_store/<qa_id>.json`. Can be seamlessly swapped for MongoDB without changing consuming service code.
+Start the development server with auto-reload:
 
-### 3. Service Layer
-- **`IngestionService`**: Provides idempotent manual ingestion. Re-running ingestion for an existing `version_id` returns the existing record without creating duplicate entries or orphaned section rows. Supports `force=True` for clean re-ingestion.
-- **`ComparisonService`**: Reuses the domain `DocumentComparator` and persists comparison results directly into SQLite.
-- **`QAService`**: Tracks QA generation selections, links them to JSON documents, and provides automated **staleness detection** by comparing snapshot `source_content_hash` against target version section hashes.
+```bash
+uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+```
+
+Interactive OpenAPI documentation is available at:
+- **Swagger UI**: `http://localhost:8000/docs`
+- **ReDoc**: `http://localhost:8000/redoc`
+
+### Endpoints Reference
+
+| Method | Endpoint | Description |
+|---|---|---|
+| `GET` | `/health` | Application health check and version metadata. |
+| `POST` | `/manuals/ingest` | Upload a manual PDF and ingest into database idempotently. |
+| `GET` | `/manuals` | List all ingested manual versions. |
+| `GET` | `/manuals/{version_id}/sections` | Paginated listing of section nodes for a manual version. |
+| `GET` | `/manuals/{version_id}/sections/{section_number}` | Retrieve full section content, body blocks, and tables. |
+| `GET` | `/manuals/{version_id}/search?q=...` | Search section titles and normalized body prose. |
+| `POST` | `/comparisons` | Run and persist a structural comparison between two versions. |
+| `GET` | `/comparisons/{comparison_id}` | Retrieve comparison results, table diffs, and substantive changes. |
+| `POST` | `/selections` | Create a QA selection pinned to a manual section and content hash. |
+| `GET` | `/selections/{selection_id}/staleness?target_version=...` | Evaluate if a selection's content hash remains current or is stale. |
+| `POST` | `/selections/{selection_id}/generate-qa` | API contract for LLM generation (reports 501 until Step 6). |
+
+### Example API Requests
+
+#### 1. Ingest Manual
+```bash
+curl -X POST "http://localhost:8000/manuals/ingest" \
+  -F "file=@data/ct200_manual.pdf" \
+  -F "version_id=v1"
+```
+
+#### 2. Search Section Content
+```bash
+curl "http://localhost:8000/manuals/v1/search?q=overpressure"
+```
+
+#### 3. Compare Manual Versions
+```bash
+curl -X POST "http://localhost:8000/comparisons" \
+  -H "Content-Type: application/json" \
+  -d '{"v1_version_id": "v1", "v2_version_id": "v2"}'
+```
+
+#### 4. Create Selection & Check Staleness
+```bash
+# Create selection for section 2.1.1.1 in v1
+curl -X POST "http://localhost:8000/selections" \
+  -H "Content-Type: application/json" \
+  -d '{"version_id": "v1", "section_number": "2.1.1.1"}'
+
+# Check staleness against v2 (detects battery cycle change 300 -> 250)
+curl "http://localhost:8000/selections/{selection_id}/staleness?target_version=v2"
+```
 
 ---
 
@@ -58,7 +106,7 @@ ct200-qa/
 
 ### Requirements
 - Python 3.11+ (tested on Python 3.13)
-- SQLite (included with standard Python)
+- SQLite (built into Python standard library)
 
 ### 1. Create Virtual Environment
 ```bash
@@ -78,7 +126,7 @@ pip install -r requirements.txt
 
 ## Running the Test Suite
 
-Run all 32 automated tests across all four modules:
+Run all 42 automated tests across all modules:
 
 ```bash
 python -m pytest -v tests/
@@ -86,17 +134,20 @@ python -m pytest -v tests/
 
 Run specific test modules:
 ```bash
-# Test extraction layer (Step 2)
-python -m pytest -v tests/test_extract.py
+# Test FastAPI REST API layer (Step 5)
+python -m pytest -v tests/test_api.py
 
-# Test hierarchy builder and anomalies (Step 3)
-python -m pytest -v tests/test_hierarchy.py
+# Test persistence, database schema, and staleness (Step 4)
+python -m pytest -v tests/test_persistence.py
 
 # Test version comparison and diffing (Step 3)
 python -m pytest -v tests/test_comparison.py
 
-# Test persistence, database schema, and staleness (Step 4)
-python -m pytest -v tests/test_persistence.py
+# Test hierarchy builder and anomalies (Step 3)
+python -m pytest -v tests/test_hierarchy.py
+
+# Test extraction layer (Step 2)
+python -m pytest -v tests/test_extract.py
 ```
 
 ---

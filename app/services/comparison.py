@@ -13,8 +13,10 @@ from sqlalchemy.orm import Session
 
 from app.comparison.diff import compare_hierarchies
 from app.comparison.models import DocumentComparisonResult
-from app.db.models import SectionDiffRecord, VersionComparisonRecord
+from app.db.models import ManualVersion, SectionDiffRecord, VersionComparisonRecord
+from app.hierarchy.builder import build_hierarchy
 from app.hierarchy.models import DocumentHierarchy
+from app.parsing.extract import extract
 
 
 class ComparisonService:
@@ -24,9 +26,9 @@ class ComparisonService:
         self,
         v1_version_id: str,
         v2_version_id: str,
-        hier_v1: DocumentHierarchy,
-        hier_v2: DocumentHierarchy,
         session: Session,
+        hier_v1: Optional[DocumentHierarchy] = None,
+        hier_v2: Optional[DocumentHierarchy] = None,
         force: bool = False,
     ) -> VersionComparisonRecord:
         """
@@ -35,9 +37,9 @@ class ComparisonService:
         Args:
             v1_version_id: Identifier for base version (e.g. 'v1').
             v2_version_id: Identifier for target version (e.g. 'v2').
-            hier_v1: DocumentHierarchy for v1.
-            hier_v2: DocumentHierarchy for v2.
             session: SQLAlchemy database session.
+            hier_v1: Optional DocumentHierarchy for v1 (extracted from manual if None).
+            hier_v2: Optional DocumentHierarchy for v2 (extracted from manual if None).
             force: If True, re-runs comparison and overwrites existing record.
 
         Returns:
@@ -53,6 +55,18 @@ class ComparisonService:
                 return existing
             session.delete(existing)
             session.flush()
+
+        if hier_v1 is None:
+            m1 = session.query(ManualVersion).filter_by(version_id=v1_version_id).first()
+            if not m1:
+                raise ValueError(f"Manual version '{v1_version_id}' not found in database.")
+            hier_v1 = build_hierarchy(extract(m1.filename))
+
+        if hier_v2 is None:
+            m2 = session.query(ManualVersion).filter_by(version_id=v2_version_id).first()
+            if not m2:
+                raise ValueError(f"Manual version '{v2_version_id}' not found in database.")
+            hier_v2 = build_hierarchy(extract(m2.filename))
 
         # Run comparison using the domain comparator
         diff_result: DocumentComparisonResult = compare_hierarchies(hier_v1, hier_v2)
