@@ -344,29 +344,30 @@ class PDFExtractor:
         if page_num == 1 and font_size >= 20.0 and is_bold:
             return "title", "H0"
 
-        # Check for numbered section pattern (e.g. "1. ", "2.1 ", "3.2 ", "2.1.1.1 ")
-        sec_match = re.match(r"^(\d+(?:\.\d+)*)\s+([A-Z].*)", norm_text)
-
-        # Main sections (H1): font_size >= 15.0pt or single digit like "1. Device Overview"
-        if font_size >= 15.0 or (sec_match and len(sec_match.group(1).split(".")) == 1):
-            return "heading", "H1"
-
-        # Sibling subsections (H2): 12.87pt Bold or section 3.2 anomaly (11pt bold)
-        if font_size >= 12.0 and is_bold:
-            return "heading", "H2"
-        if sec_match and sec_match.group(1) == "3.2" and is_bold:
-            return "heading", "H2"
-        if sec_match and len(sec_match.group(1).split(".")) == 2 and is_bold:
-            return "heading", "H2"
-
-        # Sub-subsections (H3/H4): like 2.1.1.1 (11pt bold)
-        if sec_match and len(sec_match.group(1).split(".")) > 2 and is_bold:
-            return "heading", "H3"
-
         # Numbered list items: Page 3 Section 3.3 (items 1 to 5) - 11pt regular
         list_match = re.match(r"^\d+\.\s+(Normal|Elevated|Hypertension|Hypertensive)\b", norm_text)
         if list_match and not is_bold:
             return "list_item", None
+
+        # Check for numbered section pattern (e.g. "1. ", "2.1 ", "3.2 ", "2.1.1.1 ")
+        sec_match = re.match(r"^(\d+(?:\.\d+)*)\.?\s+([A-Z].*)", norm_text)
+
+        # Main sections (H1): bold and font_size >= 15.0pt or bold single digit
+        if is_bold and (font_size >= 15.0 or (sec_match and len(sec_match.group(1).split(".")) == 1)):
+            return "heading", "H1"
+
+        # Sibling subsections (H2): 12.87pt Bold or section 3.2 anomaly (11pt bold)
+        if is_bold:
+            if font_size >= 12.0:
+                return "heading", "H2"
+            if sec_match and sec_match.group(1) == "3.2":
+                return "heading", "H2"
+            if sec_match and len(sec_match.group(1).split(".")) == 2:
+                return "heading", "H2"
+
+        # Sub-subsections (H3/H4): like 2.1.1.1 (11pt bold)
+        if is_bold and sec_match and len(sec_match.group(1).split(".")) > 2:
+            return "heading", "H3"
 
         # General body
         return "body", None
