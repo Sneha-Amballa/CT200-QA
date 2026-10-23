@@ -1,0 +1,1658 @@
+{
+  "file_name": "ct200_manual_v2.pdf",
+  "file_path": "data\\ct200_manual_v2.pdf",
+  "page_count": 7,
+  "page_width": 420.0,
+  "page_height": 595.0,
+  "metadata": {
+    "format": "PDF 1.7",
+    "title": "",
+    "author": "",
+    "subject": "",
+    "keywords": "",
+    "creator": "",
+    "producer": "",
+    "creationDate": "",
+    "modDate": "",
+    "trapped": "",
+    "encryption": null
+  },
+  "pages": [
+    {
+      "page_number": 1,
+      "width": 420.0,
+      "height": 595.0,
+      "char_count": 951,
+      "word_count": 148,
+      "ocr_needed": false,
+      "ocr_status": "Digital PDF: 100% selectable digital text present (951 chars). OCR not required.",
+      "raw_text": "CardioTrack CT-200 Home Blood\nPressure Monitor — Technical &\nUser Manual\n1. Device Overview\nThe CardioTrack CT-200 is an oscillometric, upper-arm blood pressure\nmonitor intended for home use by adult users. It measures systolic\npressure, diastolic pressure, and pulse rate, and stores up to 200\nreadings across two user proﬁles.\n1.1 Intended Use\nThe CT-200 is intended to non-invasively measure blood pressure and\npulse rate in adults with an arm circumference of 22–42 cm. It is not\nintended for use on neonates, infants, or pregnant users, and is not a\ndiagnostic device — readings should be interpreted by a qualiﬁed\nclinician.\n1.2 Indications and Contraindications\nThe device should not be used on the arm ipsilateral to a mastectomy,\non limbs with an active intravenous line, or on users with severe\narrhythmia without clinician guidance, since oscillometric measurement\ncan be unreliable in these cases.\n2. Physical and Electrical Speciﬁcations\n",
+      "image_count": 0,
+      "drawing_count": 3,
+      "heading_candidates": [
+        {
+          "text": "CardioTrack CT-200 Home Blood",
+          "font_size": 22.0,
+          "is_bold": true,
+          "is_italic": false,
+          "fonts": [
+            "NimbusSans-Bold"
+          ],
+          "bbox": [
+            33.0,
+            62.26,
+            376.51,
+            92.55
+          ],
+          "y0": 62.26,
+          "y1": 92.55,
+          "level": "Document Title (H0)"
+        },
+        {
+          "text": "Pressure Monitor — Technical &",
+          "font_size": 22.0,
+          "is_bold": true,
+          "is_italic": false,
+          "fonts": [
+            "NimbusSans-Bold"
+          ],
+          "bbox": [
+            33.0,
+            88.66,
+            371.65,
+            118.95
+          ],
+          "y0": 88.66,
+          "y1": 118.95,
+          "level": "Document Title (H0)"
+        },
+        {
+          "text": "User Manual",
+          "font_size": 22.0,
+          "is_bold": true,
+          "is_italic": false,
+          "fonts": [
+            "NimbusSans-Bold"
+          ],
+          "bbox": [
+            33.0,
+            115.06,
+            163.81,
+            145.35
+          ],
+          "y0": 115.06,
+          "y1": 145.35,
+          "level": "Document Title (H0)"
+        },
+        {
+          "text": "1. Device Overview",
+          "font_size": 16.5,
+          "is_bold": true,
+          "is_italic": false,
+          "fonts": [
+            "NimbusSans-Bold"
+          ],
+          "bbox": [
+            33.0,
+            186.3,
+            182.51,
+            209.02
+          ],
+          "y0": 186.3,
+          "y1": 209.02,
+          "level": "Main Section (H1)"
+        },
+        {
+          "text": "The CardioTrack CT-200 is an oscillometric, upper-arm blood pressure",
+          "font_size": 11.0,
+          "is_bold": false,
+          "is_italic": false,
+          "fonts": [
+            "NimbusSans-Regular"
+          ],
+          "bbox": [
+            33.0,
+            227.78,
+            377.15,
+            242.89
+          ],
+          "y0": 227.78,
+          "y1": 242.89,
+          "level": "Document Title (H0)"
+        },
+        {
+          "text": "1.1 Intended Use",
+          "font_size": 12.87,
+          "is_bold": true,
+          "is_italic": false,
+          "fonts": [
+            "NimbusSans-Bold"
+          ],
+          "bbox": [
+            33.0,
+            304.18,
+            135.28,
+            321.9
+          ],
+          "y0": 304.18,
+          "y1": 321.9,
+          "level": "Subsection (H2)"
+        },
+        {
+          "text": "1.2 Indications and Contraindications",
+          "font_size": 12.87,
+          "is_bold": true,
+          "is_italic": false,
+          "fonts": [
+            "NimbusSans-Bold"
+          ],
+          "bbox": [
+            33.0,
+            422.37,
+            261.85,
+            440.09
+          ],
+          "y0": 422.37,
+          "y1": 440.09,
+          "level": "Subsection (H2)"
+        },
+        {
+          "text": "2. Physical and Electrical Speciﬁcations",
+          "font_size": 16.5,
+          "is_bold": true,
+          "is_italic": false,
+          "fonts": [
+            "NimbusSans-Bold"
+          ],
+          "bbox": [
+            33.0,
+            530.36,
+            346.65,
+            553.08
+          ],
+          "y0": 530.36,
+          "y1": 553.08,
+          "level": "Main Section (H1)"
+        }
+      ],
+      "false_heading_candidates": [],
+      "font_stats": [
+        {
+          "font": "NimbusSans-Bold",
+          "size": 22.0,
+          "flags": 20,
+          "count": 70
+        },
+        {
+          "font": "NimbusSans-Bold",
+          "size": 16.5,
+          "flags": 20,
+          "count": 58
+        },
+        {
+          "font": "NimbusSans-Regular",
+          "size": 11.0,
+          "flags": 4,
+          "count": 750
+        },
+        {
+          "font": "NimbusSans-Bold",
+          "size": 12.87,
+          "flags": 20,
+          "count": 53
+        }
+      ],
+      "unicode_chars": [
+        {
+          "char": "—",
+          "hex": "0x2014",
+          "name": "EM DASH",
+          "count": 2
+        },
+        {
+          "char": "ﬁ",
+          "hex": "0xfb01",
+          "name": "LATIN SMALL LIGATURE FI",
+          "count": 3
+        },
+        {
+          "char": "–",
+          "hex": "0x2013",
+          "name": "EN DASH",
+          "count": 1
+        }
+      ],
+      "header_candidates": [],
+      "footer_candidates": [],
+      "first_line": {
+        "text": "CardioTrack CT-200 Home Blood",
+        "bbox": [
+          33.0,
+          62.26,
+          376.51,
+          92.55
+        ],
+        "font_size": 22.0,
+        "is_bold": true,
+        "fonts": [
+          "NimbusSans-Bold"
+        ],
+        "y0": 62.26,
+        "y1": 92.55
+      },
+      "last_line": {
+        "text": "2. Physical and Electrical Speciﬁcations",
+        "bbox": [
+          33.0,
+          530.36,
+          346.65,
+          553.08
+        ],
+        "font_size": 16.5,
+        "is_bold": true,
+        "fonts": [
+          "NimbusSans-Bold"
+        ],
+        "y0": 530.36,
+        "y1": 553.08
+      },
+      "tables": [],
+      "table_count": 0,
+      "pdfplumber_char_count": 953,
+      "render_filename": "v2_page_1.png",
+      "render_path": "renders/v2_page_1.png"
+    },
+    {
+      "page_number": 2,
+      "width": 420.0,
+      "height": 595.0,
+      "char_count": 918,
+      "word_count": 136,
+      "ocr_needed": false,
+      "ocr_status": "Digital PDF: 100% selectable digital text present (918 chars). OCR not required.",
+      "raw_text": "2.1 General Speciﬁcations\nParameter\nValue\nMeasurement method\nOscillometric\nPressure range\n0–299 mmHg\nPulse range\n40–199 bpm\nAccuracy (pressure)\n±3 mmHg\nAccuracy (pulse)\n±5%\nPower source\n4x AA batteries or 6V DC adapter\nDisplay\nBacklit LCD\n2.1.1.1 Battery Life Under Typical Use\nUnder typical use (three measurements per day), four AA alkaline\nbatteries provide approximately 250 measurement cycles before\nrequiring replacement — revised downward from earlier estimates after\nextended ﬁeld testing. The device displays a low‑battery icon once\nremaining capacity falls below 10%.\n2.2 Cuﬀ Speciﬁcations\nThe standard cuﬀ supplied with the CT‑200 ﬁts arm circumferences of\n22–32 cm. A separate large cuﬀ (part number CT200‑LC) is available for\n32–42 cm and must be ordered separately; using the standard cuﬀ\noutside its rated range will produce inaccurate readings.\n3. Device Operation\n3.1 Powering On and Proﬁle Selection\n",
+      "image_count": 0,
+      "drawing_count": 78,
+      "heading_candidates": [
+        {
+          "text": "2.1 General Speciﬁcations",
+          "font_size": 12.87,
+          "is_bold": true,
+          "is_italic": false,
+          "fonts": [
+            "NimbusSans-Bold"
+          ],
+          "bbox": [
+            33.0,
+            43.68,
+            193.23,
+            61.4
+          ],
+          "y0": 43.68,
+          "y1": 61.4,
+          "level": "Subsection (H2)"
+        },
+        {
+          "text": "2.1.1.1 Battery Life Under Typical Use",
+          "font_size": 11.0,
+          "is_bold": true,
+          "is_italic": false,
+          "fonts": [
+            "NimbusSans-Bold"
+          ],
+          "bbox": [
+            33.0,
+            252.41,
+            229.24,
+            267.56
+          ],
+          "y0": 252.41,
+          "y1": 267.56,
+          "level": "Sub-subsection (H3/H4)"
+        },
+        {
+          "text": "2.2 Cuﬀ Speciﬁcations",
+          "font_size": 12.87,
+          "is_bold": true,
+          "is_italic": false,
+          "fonts": [
+            "NimbusSans-Bold"
+          ],
+          "bbox": [
+            33.0,
+            366.17,
+            171.03,
+            383.89
+          ],
+          "y0": 366.17,
+          "y1": 383.89,
+          "level": "Subsection (H2)"
+        },
+        {
+          "text": "3. Device Operation",
+          "font_size": 16.5,
+          "is_bold": true,
+          "is_italic": false,
+          "fonts": [
+            "NimbusSans-Bold"
+          ],
+          "bbox": [
+            33.0,
+            474.16,
+            187.06,
+            496.88
+          ],
+          "y0": 474.16,
+          "y1": 496.88,
+          "level": "Main Section (H1)"
+        },
+        {
+          "text": "3.1 Powering On and Proﬁle Selection",
+          "font_size": 12.87,
+          "is_bold": true,
+          "is_italic": false,
+          "fonts": [
+            "NimbusSans-Bold"
+          ],
+          "bbox": [
+            33.0,
+            528.25,
+            264.74,
+            545.97
+          ],
+          "y0": 528.25,
+          "y1": 545.97,
+          "level": "Subsection (H2)"
+        }
+      ],
+      "false_heading_candidates": [
+        {
+          "text": "Parameter",
+          "font_size": 11.0,
+          "is_bold": true,
+          "is_italic": false,
+          "fonts": [
+            "NimbusSans-Bold"
+          ],
+          "bbox": [
+            66.09,
+            76.06,
+            119.89,
+            91.21
+          ],
+          "y0": 76.06,
+          "y1": 91.21,
+          "reason": "Table column header cell (11pt bold) masquerading as heading"
+        },
+        {
+          "text": "Value",
+          "font_size": 11.0,
+          "is_bold": true,
+          "is_italic": false,
+          "fonts": [
+            "NimbusSans-Bold"
+          ],
+          "bbox": [
+            225.43,
+            76.06,
+            254.78,
+            91.21
+          ],
+          "y0": 76.06,
+          "y1": 91.21,
+          "reason": "Table column header cell (11pt bold) masquerading as heading"
+        }
+      ],
+      "font_stats": [
+        {
+          "font": "NimbusSans-Bold",
+          "size": 12.87,
+          "flags": 20,
+          "count": 82
+        },
+        {
+          "font": "NimbusSans-Bold",
+          "size": 11.0,
+          "flags": 20,
+          "count": 52
+        },
+        {
+          "font": "NimbusSans-Regular",
+          "size": 11.0,
+          "flags": 4,
+          "count": 732
+        },
+        {
+          "font": "NotoSerif-Regular",
+          "size": 11.0,
+          "flags": 4,
+          "count": 3
+        },
+        {
+          "font": "NimbusSans-Bold",
+          "size": 16.5,
+          "flags": 20,
+          "count": 19
+        }
+      ],
+      "unicode_chars": [
+        {
+          "char": "ﬁ",
+          "hex": "0xfb01",
+          "name": "LATIN SMALL LIGATURE FI",
+          "count": 5
+        },
+        {
+          "char": "–",
+          "hex": "0x2013",
+          "name": "EN DASH",
+          "count": 4
+        },
+        {
+          "char": "±",
+          "hex": "0xb1",
+          "name": "PLUS-MINUS SIGN",
+          "count": 2
+        },
+        {
+          "char": "—",
+          "hex": "0x2014",
+          "name": "EM DASH",
+          "count": 1
+        },
+        {
+          "char": "‑",
+          "hex": "0x2011",
+          "name": "NON-BREAKING HYPHEN",
+          "count": 3
+        },
+        {
+          "char": "ﬀ",
+          "hex": "0xfb00",
+          "name": "LATIN SMALL LIGATURE FF",
+          "count": 4
+        }
+      ],
+      "header_candidates": [],
+      "footer_candidates": [],
+      "first_line": {
+        "text": "2.1 General Speciﬁcations",
+        "bbox": [
+          33.0,
+          43.68,
+          193.23,
+          61.4
+        ],
+        "font_size": 12.87,
+        "is_bold": true,
+        "fonts": [
+          "NimbusSans-Bold"
+        ],
+        "y0": 43.68,
+        "y1": 61.4
+      },
+      "last_line": {
+        "text": "3.1 Powering On and Proﬁle Selection",
+        "bbox": [
+          33.0,
+          528.25,
+          264.74,
+          545.97
+        ],
+        "font_size": 12.87,
+        "is_bold": true,
+        "fonts": [
+          "NimbusSans-Bold"
+        ],
+        "y0": 528.25,
+        "y1": 545.97
+      },
+      "tables": [
+        [
+          [
+            "Parameter",
+            "Value"
+          ],
+          [
+            "Measurement method",
+            "Oscillometric"
+          ],
+          [
+            "Pressure range",
+            "0–299 mmHg"
+          ],
+          [
+            "Pulse range",
+            "40–199 bpm"
+          ],
+          [
+            "Accuracy (pressure)",
+            "±3 mmHg"
+          ],
+          [
+            "Accuracy (pulse)",
+            "±5%"
+          ],
+          [
+            "Power source",
+            "4x AA batteries or 6V DC adapter"
+          ],
+          [
+            "Display",
+            "Backlit LCD"
+          ]
+        ],
+        [
+          [
+            "Pressure",
+            "range"
+          ]
+        ],
+        [
+          [
+            "0–",
+            "299",
+            "mmHg"
+          ]
+        ],
+        [
+          [
+            "Accuracy",
+            "(pressure)"
+          ]
+        ],
+        [
+          [
+            "±3",
+            "mmHg"
+          ]
+        ],
+        [
+          [
+            "Power",
+            null,
+            "source"
+          ]
+        ],
+        [
+          [
+            "4x",
+            "AA",
+            "batteries",
+            null,
+            "or",
+            null,
+            "6V",
+            null,
+            "DC",
+            null,
+            "adapter"
+          ]
+        ]
+      ],
+      "table_count": 7,
+      "pdfplumber_char_count": 926,
+      "render_filename": "v2_page_2.png",
+      "render_path": "renders/v2_page_2.png"
+    },
+    {
+      "page_number": 3,
+      "width": 420.0,
+      "height": 595.0,
+      "char_count": 1593,
+      "word_count": 259,
+      "ocr_needed": false,
+      "ocr_status": "Digital PDF: 100% selectable digital text present (1593 chars). OCR not required.",
+      "raw_text": "Press and hold the power button for one second to power on the device.\nUse the proﬁle button to select User 1 or User 2 before beginning a\nmeasurement; readings are stored against whichever proﬁle is active at\nthe time of measurement.\n3.2 Cuﬀ Inﬂation Sequence\nOn starting a measurement, the device inﬂates the cuﬀ to an initial target\nof 180 mmHg. If the user's pulse is not detected by 180 mmHg, the\ndevice inﬂates in 30 mmHg increments up to a maximum of 299 mmHg\nbefore aborting with an error. Deﬂation occurs in controlled steps of\napproximately 3 mmHg to capture oscillometric pulse data. Increment\nsize was reduced from the original 40 mmHg to improve pulse-detection\nreliability in ﬁeld testing.\n3.4 Auto Shutoﬀ\nTo conserve battery, the CT‑200 automatically powers oﬀ after 60\nseconds of inactivity on the home screen, and after 3 minutes of\ninactivity if a measurement screen is left open without starting a reading.\n3.3 Result Display and Classiﬁcation\nAfter a completed measurement, the device displays systolic pressure,\ndiastolic pressure, and pulse rate simultaneously, along with a\nclassiﬁcation indicator (see 2.1, 4.3 for related speciﬁcations and alarm\nthresholds) based on the most recent joint clinical guidance available at\ntime of manufacture.\n1. Normal: systolic < 120 and diastolic < 80\n2. Elevated: systolic 120–129 and diastolic < 80\n3. Hypertension Stage 1: systolic 130–139 or diastolic 80–89\n4. Hypertension Stage 2: systolic ≥ 140 or diastolic ≥ 90\n5. Hypertensive Crisis: systolic > 180 or diastolic > 120 — device\nrecommends seeking immediate medical attention\n",
+      "image_count": 0,
+      "drawing_count": 1,
+      "heading_candidates": [
+        {
+          "text": "3.2 Cuﬀ Inﬂation Sequence",
+          "font_size": 11.0,
+          "is_bold": true,
+          "is_italic": false,
+          "fonts": [
+            "NimbusSans-Bold"
+          ],
+          "bbox": [
+            33.0,
+            105.93,
+            174.2,
+            121.08
+          ],
+          "y0": 105.93,
+          "y1": 121.08,
+          "level": "Subsection (H2 Anomaly - 11pt bold)"
+        },
+        {
+          "text": "3.4 Auto Shutoﬀ",
+          "font_size": 12.87,
+          "is_bold": true,
+          "is_italic": false,
+          "fonts": [
+            "NimbusSans-Bold"
+          ],
+          "bbox": [
+            33.0,
+            246.08,
+            132.38,
+            263.8
+          ],
+          "y0": 246.08,
+          "y1": 263.8,
+          "level": "Subsection (H2)"
+        },
+        {
+          "text": "3.3 Result Display and Classiﬁcation",
+          "font_size": 12.87,
+          "is_bold": true,
+          "is_italic": false,
+          "fonts": [
+            "NimbusSans-Bold"
+          ],
+          "bbox": [
+            33.0,
+            337.87,
+            256.87,
+            355.59
+          ],
+          "y0": 337.87,
+          "y1": 355.59,
+          "level": "Subsection (H2)"
+        }
+      ],
+      "false_heading_candidates": [],
+      "font_stats": [
+        {
+          "font": "NimbusSans-Regular",
+          "size": 11.0,
+          "flags": 4,
+          "count": 1488
+        },
+        {
+          "font": "NimbusSans-Bold",
+          "size": 11.0,
+          "flags": 20,
+          "count": 25
+        },
+        {
+          "font": "NimbusSans-Bold",
+          "size": 12.87,
+          "flags": 20,
+          "count": 51
+        },
+        {
+          "font": "NotoSerif-Regular",
+          "size": 11.0,
+          "flags": 4,
+          "count": 1
+        }
+      ],
+      "unicode_chars": [
+        {
+          "char": "ﬁ",
+          "hex": "0xfb01",
+          "name": "LATIN SMALL LIGATURE FI",
+          "count": 6
+        },
+        {
+          "char": "ﬀ",
+          "hex": "0xfb00",
+          "name": "LATIN SMALL LIGATURE FF",
+          "count": 4
+        },
+        {
+          "char": "ﬂ",
+          "hex": "0xfb02",
+          "name": "LATIN SMALL LIGATURE FL",
+          "count": 4
+        },
+        {
+          "char": "‑",
+          "hex": "0x2011",
+          "name": "NON-BREAKING HYPHEN",
+          "count": 1
+        },
+        {
+          "char": "–",
+          "hex": "0x2013",
+          "name": "EN DASH",
+          "count": 3
+        },
+        {
+          "char": "≥",
+          "hex": "0x2265",
+          "name": "GREATER-THAN OR EQUAL TO",
+          "count": 2
+        },
+        {
+          "char": "—",
+          "hex": "0x2014",
+          "name": "EM DASH",
+          "count": 1
+        }
+      ],
+      "header_candidates": [
+        "Press and hold the power button for one second to power on the device."
+      ],
+      "footer_candidates": [],
+      "first_line": {
+        "text": "Press and hold the power button for one second to power on the device.",
+        "bbox": [
+          33.0,
+          31.08,
+          383.98,
+          46.19
+        ],
+        "font_size": 11.0,
+        "is_bold": false,
+        "fonts": [
+          "NimbusSans-Regular"
+        ],
+        "y0": 31.08,
+        "y1": 46.19
+      },
+      "last_line": {
+        "text": "recommends seeking immediate medical attention",
+        "bbox": [
+          63.0,
+          509.44,
+          307.53,
+          524.56
+        ],
+        "font_size": 11.0,
+        "is_bold": false,
+        "fonts": [
+          "NimbusSans-Regular"
+        ],
+        "y0": 509.44,
+        "y1": 524.56
+      },
+      "tables": [],
+      "table_count": 0,
+      "pdfplumber_char_count": 1606,
+      "render_filename": "v2_page_3.png",
+      "render_path": "renders/v2_page_3.png"
+    },
+    {
+      "page_number": 4,
+      "width": 420.0,
+      "height": 595.0,
+      "char_count": 1079,
+      "word_count": 164,
+      "ocr_needed": false,
+      "ocr_status": "Digital PDF: 100% selectable digital text present (1079 chars). OCR not required.",
+      "raw_text": "4. Alarms and Safety Behavior\n4.1 Overpressure Protection\nIf cuﬀ pressure exceeds 299 mmHg at any point, or exceeds 300 mmHg\nfor longer than 3 seconds due to sensor fault, the device immediately\ntriggers an emergency deﬂation valve, halting inﬂation and venting the\ncuﬀ within 2 seconds, independent of the main ﬁrmware control loop.\n4.2 Error Codes\nCode\nMeaning\nDevice Behavior\nE1\nCuﬀ not connected or\nleak detected\nAborts measurement, displays E1\nE2\nMotion artifact detected\nduring measurement\nAborts measurement, displays\nE2, prompts retry\nE3\nOverpressure condition\nAuto-deﬂates within 1.5 seconds,\ndisplays E3\nE4\nLow battery during\nmeasurement\nAborts measurement, displays E4\nE5\nInternal sensor fault\nDevice disables measurement\nfunction, displays E5 until\nserviced\nE6\nBluetooth sync failure\nDisplays E6 on next sync\nattempt; does not aﬀect\nmeasurement\n4.3 Alarm Thresholds\nThe device does not sound an audible alarm for elevated readings by\ndefault; audible alarms are limited to the E1–E6 error conditions above\nand are user‑conﬁgurable in the settings menu, except for E3\n",
+      "image_count": 0,
+      "drawing_count": 118,
+      "heading_candidates": [
+        {
+          "text": "4. Alarms and Safety Behavior",
+          "font_size": 16.5,
+          "is_bold": true,
+          "is_italic": false,
+          "fonts": [
+            "NimbusSans-Bold"
+          ],
+          "bbox": [
+            33.0,
+            30.19,
+            270.5,
+            52.92
+          ],
+          "y0": 30.19,
+          "y1": 52.92,
+          "level": "Main Section (H1)"
+        },
+        {
+          "text": "4.1 Overpressure Protection",
+          "font_size": 12.87,
+          "is_bold": true,
+          "is_italic": false,
+          "fonts": [
+            "NimbusSans-Bold"
+          ],
+          "bbox": [
+            33.0,
+            84.28,
+            205.38,
+            102.0
+          ],
+          "y0": 84.28,
+          "y1": 102.0,
+          "level": "Subsection (H2)"
+        },
+        {
+          "text": "4.2 Error Codes",
+          "font_size": 12.87,
+          "is_bold": true,
+          "is_italic": false,
+          "fonts": [
+            "NimbusSans-Bold"
+          ],
+          "bbox": [
+            33.0,
+            189.27,
+            128.84,
+            206.99
+          ],
+          "y0": 189.27,
+          "y1": 206.99,
+          "level": "Subsection (H2)"
+        },
+        {
+          "text": "4.3 Alarm Thresholds",
+          "font_size": 12.87,
+          "is_bold": true,
+          "is_italic": false,
+          "fonts": [
+            "NimbusSans-Bold"
+          ],
+          "bbox": [
+            33.0,
+            485.45,
+            163.89,
+            503.17
+          ],
+          "y0": 485.45,
+          "y1": 503.17,
+          "level": "Subsection (H2)"
+        }
+      ],
+      "false_heading_candidates": [
+        {
+          "text": "Code",
+          "font_size": 11.0,
+          "is_bold": true,
+          "is_italic": false,
+          "fonts": [
+            "NimbusSans-Bold"
+          ],
+          "bbox": [
+            39.5,
+            221.65,
+            67.0,
+            236.79
+          ],
+          "y0": 221.65,
+          "y1": 236.79,
+          "reason": "Table column header cell (11pt bold) masquerading as heading"
+        },
+        {
+          "text": "Meaning",
+          "font_size": 11.0,
+          "is_bold": true,
+          "is_italic": false,
+          "fonts": [
+            "NimbusSans-Bold"
+          ],
+          "bbox": [
+            119.05,
+            221.65,
+            163.67,
+            236.79
+          ],
+          "y0": 221.65,
+          "y1": 236.79,
+          "reason": "Table column header cell (11pt bold) masquerading as heading"
+        },
+        {
+          "text": "Device Behavior",
+          "font_size": 11.0,
+          "is_bold": true,
+          "is_italic": false,
+          "fonts": [
+            "NimbusSans-Bold"
+          ],
+          "bbox": [
+            255.32,
+            221.65,
+            340.91,
+            236.79
+          ],
+          "y0": 221.65,
+          "y1": 236.79,
+          "reason": "Table column header cell (11pt bold) masquerading as heading"
+        }
+      ],
+      "font_stats": [
+        {
+          "font": "NimbusSans-Bold",
+          "size": 16.5,
+          "flags": 20,
+          "count": 29
+        },
+        {
+          "font": "NimbusSans-Bold",
+          "size": 12.87,
+          "flags": 20,
+          "count": 62
+        },
+        {
+          "font": "NimbusSans-Regular",
+          "size": 11.0,
+          "flags": 4,
+          "count": 920
+        },
+        {
+          "font": "NimbusSans-Bold",
+          "size": 11.0,
+          "flags": 20,
+          "count": 26
+        },
+        {
+          "font": "NotoSerif-Regular",
+          "size": 11.0,
+          "flags": 4,
+          "count": 1
+        }
+      ],
+      "unicode_chars": [
+        {
+          "char": "ﬀ",
+          "hex": "0xfb00",
+          "name": "LATIN SMALL LIGATURE FF",
+          "count": 4
+        },
+        {
+          "char": "ﬂ",
+          "hex": "0xfb02",
+          "name": "LATIN SMALL LIGATURE FL",
+          "count": 3
+        },
+        {
+          "char": "ﬁ",
+          "hex": "0xfb01",
+          "name": "LATIN SMALL LIGATURE FI",
+          "count": 2
+        },
+        {
+          "char": "–",
+          "hex": "0x2013",
+          "name": "EN DASH",
+          "count": 1
+        },
+        {
+          "char": "‑",
+          "hex": "0x2011",
+          "name": "NON-BREAKING HYPHEN",
+          "count": 1
+        }
+      ],
+      "header_candidates": [],
+      "footer_candidates": [],
+      "first_line": {
+        "text": "4. Alarms and Safety Behavior",
+        "bbox": [
+          33.0,
+          30.19,
+          270.5,
+          52.92
+        ],
+        "font_size": 16.5,
+        "is_bold": true,
+        "fonts": [
+          "NimbusSans-Bold"
+        ],
+        "y0": 30.19,
+        "y1": 52.92
+      },
+      "last_line": {
+        "text": "and are user‑conﬁgurable in the settings menu, except for E3",
+        "bbox": [
+          33.0,
+          540.43,
+          330.51,
+          555.54
+        ],
+        "font_size": 11.0,
+        "is_bold": false,
+        "fonts": [
+          "NotoSerif-Regular",
+          "NimbusSans-Regular"
+        ],
+        "y0": 540.43,
+        "y1": 555.54
+      },
+      "tables": [
+        [
+          [
+            "Code",
+            "Meaning",
+            "Device Behavior"
+          ],
+          [
+            "E1",
+            "Cuff not connected or\nleak detected",
+            "Aborts measurement, displays E1"
+          ],
+          [
+            "E2",
+            "Motion artifact detected\nduring measurement",
+            "Aborts measurement, displays\nE2, prompts retry"
+          ],
+          [
+            "E3",
+            "Overpressure condition",
+            "Auto-deflates within 1.5 seconds,\ndisplays E3"
+          ],
+          [
+            "E4",
+            "Low battery during\nmeasurement",
+            "Aborts measurement, displays E4"
+          ],
+          [
+            "E5",
+            "Internal sensor fault",
+            "Device disables measurement\nfunction, displays E5 until\nserviced"
+          ],
+          [
+            "E6",
+            "Bluetooth sync failure",
+            "Displays E6 on next sync\nattempt; does not affect\nmeasurement"
+          ]
+        ],
+        [
+          [
+            "Motion",
+            "artifact",
+            null,
+            "detected"
+          ],
+          [
+            "during",
+            "measurement",
+            null,
+            null
+          ]
+        ],
+        [
+          [
+            "Aborts",
+            null,
+            null,
+            null,
+            "measurement,",
+            null,
+            null,
+            "displays"
+          ],
+          [
+            "E2,",
+            null,
+            "prompts",
+            null,
+            null,
+            "retry",
+            null,
+            null
+          ]
+        ],
+        [
+          [
+            "Low",
+            null,
+            "battery",
+            null,
+            "during"
+          ],
+          [
+            "measurement",
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        [
+          [
+            "Aborts",
+            null,
+            "measurement,",
+            null,
+            "displays",
+            null,
+            "E4"
+          ]
+        ],
+        [
+          [
+            "Bluetooth",
+            null,
+            "sync",
+            null,
+            "failure"
+          ]
+        ],
+        [
+          [
+            "Displays",
+            "E6",
+            "on",
+            null,
+            null,
+            "next",
+            null,
+            null,
+            null,
+            "sync"
+          ],
+          [
+            "attempt;",
+            "does",
+            null,
+            "not",
+            null,
+            null,
+            null,
+            "affect",
+            null,
+            null
+          ],
+          [
+            "measurement",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ]
+      ],
+      "table_count": 7,
+      "pdfplumber_char_count": 1087,
+      "render_filename": "v2_page_4.png",
+      "render_path": "renders/v2_page_4.png"
+    },
+    {
+      "page_number": 5,
+      "width": 420.0,
+      "height": 595.0,
+      "char_count": 1056,
+      "word_count": 168,
+      "ocr_needed": false,
+      "ocr_status": "Digital PDF: 100% selectable digital text present (1056 chars). OCR not required.",
+      "raw_text": "(overpressure), which cannot be silenced for safety reasons.\n5. Data Management\n5.1 Local Storage\nThe CT‑200 stores up to 100 readings per user proﬁle in non‑volatile\nmemory. When storage is full, the oldest reading for that proﬁle is\noverwritten automatically; there is no user‑facing warning before this\noccurs.\n5.2 Bluetooth Sync\nThe device can pair with the CardioTrack companion app via Bluetooth\nLow Energy. Readings sync automatically when the app is open and the\ndevice is within range; there is no manual \"sync now\" trigger in ﬁrmware\nversion 1.x.\n5.3 Data Export\nStarting with ﬁrmware 1.4, the companion app supports exporting stored\nreadings as a CSV ﬁle containing timestamp, proﬁle, systolic, diastolic,\npulse, and classiﬁcation columns. Export requires the device to have\ncompleted at least one successful Bluetooth sync in the current session.\n6. Maintenance and Cleaning\n6.1 Cleaning Instructions\nWipe the device body and cuﬀ exterior with a soft, dry cloth or one lightly\ndampened with water. Do not submerge the device or cuﬀ, and do not\n",
+      "image_count": 0,
+      "drawing_count": 2,
+      "heading_candidates": [
+        {
+          "text": "5. Data Management",
+          "font_size": 16.5,
+          "is_bold": true,
+          "is_italic": false,
+          "fonts": [
+            "NimbusSans-Bold"
+          ],
+          "bbox": [
+            33.0,
+            70.9,
+            192.54,
+            93.62
+          ],
+          "y0": 70.9,
+          "y1": 93.62,
+          "level": "Main Section (H1)"
+        },
+        {
+          "text": "5.1 Local Storage",
+          "font_size": 12.87,
+          "is_bold": true,
+          "is_italic": false,
+          "fonts": [
+            "NimbusSans-Bold"
+          ],
+          "bbox": [
+            33.0,
+            124.98,
+            139.58,
+            142.7
+          ],
+          "y0": 124.98,
+          "y1": 142.7,
+          "level": "Subsection (H2)"
+        },
+        {
+          "text": "5.2 Bluetooth Sync",
+          "font_size": 12.87,
+          "is_bold": true,
+          "is_italic": false,
+          "fonts": [
+            "NimbusSans-Bold"
+          ],
+          "bbox": [
+            33.0,
+            229.97,
+            148.86,
+            247.69
+          ],
+          "y0": 229.97,
+          "y1": 247.69,
+          "level": "Subsection (H2)"
+        },
+        {
+          "text": "5.3 Data Export",
+          "font_size": 12.87,
+          "is_bold": true,
+          "is_italic": false,
+          "fonts": [
+            "NimbusSans-Bold"
+          ],
+          "bbox": [
+            33.0,
+            334.95,
+            126.69,
+            352.67
+          ],
+          "y0": 334.95,
+          "y1": 352.67,
+          "level": "Subsection (H2)"
+        },
+        {
+          "text": "6. Maintenance and Cleaning",
+          "font_size": 16.5,
+          "is_bold": true,
+          "is_italic": false,
+          "fonts": [
+            "NimbusSans-Bold"
+          ],
+          "bbox": [
+            33.0,
+            442.95,
+            259.48,
+            465.67
+          ],
+          "y0": 442.95,
+          "y1": 465.67,
+          "level": "Main Section (H1)"
+        },
+        {
+          "text": "6.1 Cleaning Instructions",
+          "font_size": 12.87,
+          "is_bold": true,
+          "is_italic": false,
+          "fonts": [
+            "NimbusSans-Bold"
+          ],
+          "bbox": [
+            33.0,
+            497.03,
+            186.05,
+            514.76
+          ],
+          "y0": 497.03,
+          "y1": 514.76,
+          "level": "Subsection (H2)"
+        }
+      ],
+      "false_heading_candidates": [],
+      "font_stats": [
+        {
+          "font": "NimbusSans-Regular",
+          "size": 11.0,
+          "flags": 4,
+          "count": 912
+        },
+        {
+          "font": "NimbusSans-Bold",
+          "size": 16.5,
+          "flags": 20,
+          "count": 45
+        },
+        {
+          "font": "NimbusSans-Bold",
+          "size": 12.87,
+          "flags": 20,
+          "count": 75
+        },
+        {
+          "font": "NotoSerif-Regular",
+          "size": 11.0,
+          "flags": 4,
+          "count": 3
+        }
+      ],
+      "unicode_chars": [
+        {
+          "char": "‑",
+          "hex": "0x2011",
+          "name": "NON-BREAKING HYPHEN",
+          "count": 3
+        },
+        {
+          "char": "ﬁ",
+          "hex": "0xfb01",
+          "name": "LATIN SMALL LIGATURE FI",
+          "count": 7
+        },
+        {
+          "char": "ﬀ",
+          "hex": "0xfb00",
+          "name": "LATIN SMALL LIGATURE FF",
+          "count": 2
+        }
+      ],
+      "header_candidates": [
+        "(overpressure), which cannot be silenced for safety reasons."
+      ],
+      "footer_candidates": [],
+      "first_line": {
+        "text": "(overpressure), which cannot be silenced for safety reasons.",
+        "bbox": [
+          33.0,
+          31.07,
+          327.06,
+          46.19
+        ],
+        "font_size": 11.0,
+        "is_bold": false,
+        "fonts": [
+          "NimbusSans-Regular"
+        ],
+        "y0": 31.07,
+        "y1": 46.19
+      },
+      "last_line": {
+        "text": "dampened with water. Do not submerge the device or cuﬀ, and do not",
+        "bbox": [
+          33.0,
+          538.81,
+          372.96,
+          553.93
+        ],
+        "font_size": 11.0,
+        "is_bold": false,
+        "fonts": [
+          "NimbusSans-Regular"
+        ],
+        "y0": 538.81,
+        "y1": 553.93
+      },
+      "tables": [],
+      "table_count": 0,
+      "pdfplumber_char_count": 1064,
+      "render_filename": "v2_page_5.png",
+      "render_path": "renders/v2_page_5.png"
+    },
+    {
+      "page_number": 6,
+      "width": 420.0,
+      "height": 595.0,
+      "char_count": 1063,
+      "word_count": 149,
+      "ocr_needed": false,
+      "ocr_status": "Digital PDF: 100% selectable digital text present (1063 chars). OCR not required.",
+      "raw_text": "use alcohol, solvents, or abrasive cleaners on the display.\n6.2 Calibration\nAnthropic recommends professional recalibration every 2 years or after\nany drop or signiﬁcant impact. The device does not perform\nself‑calibration; there is no ﬁeld calibration procedure available to end\nusers.\n7. Troubleshooting\n7.1 Error Codes\nIf a code from Section 4.2 appears and persists after following the\non‑screen retry prompt twice, users should discontinue use and contact\nCardioTrack support rather than attempting further self‑diagnosis,\nparticularly for E5, which indicates an internal sensor fault.\n7.2 Inconsistent Readings\nInconsistent readings between measurements are most commonly\ncaused by cuﬀ mispositioning, talking or moving during measurement, or\nmeasuring within 30 minutes of exercise, caﬀeine, or smoking; the\nmanual recommends resting quietly for 5 minutes before remeasuring.\n8. Regulatory Information\n8.1 Classiﬁcation\nThe CT‑200 is classiﬁed as a Class II medical device under applicable\nregulations for non‑invasive blood pressure monitors and has been\n",
+      "image_count": 0,
+      "drawing_count": 2,
+      "heading_candidates": [
+        {
+          "text": "6.2 Calibration",
+          "font_size": 12.87,
+          "is_bold": true,
+          "is_italic": false,
+          "fonts": [
+            "NimbusSans-Bold"
+          ],
+          "bbox": [
+            33.0,
+            67.88,
+            121.69,
+            85.6
+          ],
+          "y0": 67.88,
+          "y1": 85.6,
+          "level": "Subsection (H2)"
+        },
+        {
+          "text": "7. Troubleshooting",
+          "font_size": 16.5,
+          "is_bold": true,
+          "is_italic": false,
+          "fonts": [
+            "NimbusSans-Bold"
+          ],
+          "bbox": [
+            33.0,
+            175.88,
+            181.52,
+            198.6
+          ],
+          "y0": 175.88,
+          "y1": 198.6,
+          "level": "Main Section (H1)"
+        },
+        {
+          "text": "7.1 Error Codes",
+          "font_size": 12.87,
+          "is_bold": true,
+          "is_italic": false,
+          "fonts": [
+            "NimbusSans-Bold"
+          ],
+          "bbox": [
+            33.0,
+            229.97,
+            128.84,
+            247.69
+          ],
+          "y0": 229.97,
+          "y1": 247.69,
+          "level": "Subsection (H2)"
+        },
+        {
+          "text": "7.2 Inconsistent Readings",
+          "font_size": 12.87,
+          "is_bold": true,
+          "is_italic": false,
+          "fonts": [
+            "NimbusSans-Bold"
+          ],
+          "bbox": [
+            33.0,
+            334.95,
+            191.78,
+            352.67
+          ],
+          "y0": 334.95,
+          "y1": 352.67,
+          "level": "Subsection (H2)"
+        },
+        {
+          "text": "8. Regulatory Information",
+          "font_size": 16.5,
+          "is_bold": true,
+          "is_italic": false,
+          "fonts": [
+            "NimbusSans-Bold"
+          ],
+          "bbox": [
+            33.0,
+            442.95,
+            232.86,
+            465.67
+          ],
+          "y0": 442.95,
+          "y1": 465.67,
+          "level": "Main Section (H1)"
+        },
+        {
+          "text": "8.1 Classiﬁcation",
+          "font_size": 12.87,
+          "is_bold": true,
+          "is_italic": false,
+          "fonts": [
+            "NimbusSans-Bold"
+          ],
+          "bbox": [
+            33.0,
+            497.03,
+            138.15,
+            514.76
+          ],
+          "y0": 497.03,
+          "y1": 514.76,
+          "level": "Subsection (H2)"
+        }
+      ],
+      "false_heading_candidates": [],
+      "font_stats": [
+        {
+          "font": "NimbusSans-Regular",
+          "size": 11.0,
+          "flags": 4,
+          "count": 922
+        },
+        {
+          "font": "NimbusSans-Bold",
+          "size": 12.87,
+          "flags": 20,
+          "count": 72
+        },
+        {
+          "font": "NotoSerif-Regular",
+          "size": 11.0,
+          "flags": 4,
+          "count": 5
+        },
+        {
+          "font": "NimbusSans-Bold",
+          "size": 16.5,
+          "flags": 20,
+          "count": 43
+        }
+      ],
+      "unicode_chars": [
+        {
+          "char": "ﬁ",
+          "hex": "0xfb01",
+          "name": "LATIN SMALL LIGATURE FI",
+          "count": 4
+        },
+        {
+          "char": "‑",
+          "hex": "0x2011",
+          "name": "NON-BREAKING HYPHEN",
+          "count": 5
+        },
+        {
+          "char": "ﬀ",
+          "hex": "0xfb00",
+          "name": "LATIN SMALL LIGATURE FF",
+          "count": 2
+        }
+      ],
+      "header_candidates": [
+        "use alcohol, solvents, or abrasive cleaners on the display."
+      ],
+      "footer_candidates": [],
+      "first_line": {
+        "text": "use alcohol, solvents, or abrasive cleaners on the display.",
+        "bbox": [
+          33.0,
+          31.07,
+          314.24,
+          46.19
+        ],
+        "font_size": 11.0,
+        "is_bold": false,
+        "fonts": [
+          "NimbusSans-Regular"
+        ],
+        "y0": 31.07,
+        "y1": 46.19
+      },
+      "last_line": {
+        "text": "regulations for non‑invasive blood pressure monitors and has been",
+        "bbox": [
+          33.0,
+          538.81,
+          358.01,
+          553.93
+        ],
+        "font_size": 11.0,
+        "is_bold": false,
+        "fonts": [
+          "NotoSerif-Regular",
+          "NimbusSans-Regular"
+        ],
+        "y0": 538.81,
+        "y1": 553.93
+      },
+      "tables": [],
+      "table_count": 0,
+      "pdfplumber_char_count": 1068,
+      "render_filename": "v2_page_6.png",
+      "render_path": "renders/v2_page_6.png"
+    },
+    {
+      "page_number": 7,
+      "width": 420.0,
+      "height": 595.0,
+      "char_count": 82,
+      "word_count": 9,
+      "ocr_needed": false,
+      "ocr_status": "Digital PDF: 100% selectable digital text present (82 chars). OCR not required.",
+      "raw_text": "validated against relevant clinical accuracy standards for oscillometric\ndevices.\n",
+      "image_count": 0,
+      "drawing_count": 0,
+      "heading_candidates": [],
+      "false_heading_candidates": [],
+      "font_stats": [
+        {
+          "font": "NimbusSans-Regular",
+          "size": 11.0,
+          "flags": 4,
+          "count": 80
+        }
+      ],
+      "unicode_chars": [],
+      "header_candidates": [
+        "validated against relevant clinical accuracy standards for oscillometric"
+      ],
+      "footer_candidates": [],
+      "first_line": {
+        "text": "validated against relevant clinical accuracy standards for oscillometric",
+        "bbox": [
+          33.0,
+          31.07,
+          371.67,
+          46.19
+        ],
+        "font_size": 11.0,
+        "is_bold": false,
+        "fonts": [
+          "NimbusSans-Regular"
+        ],
+        "y0": 31.07,
+        "y1": 46.19
+      },
+      "last_line": {
+        "text": "devices.",
+        "bbox": [
+          33.0,
+          44.27,
+          73.35,
+          59.39
+        ],
+        "font_size": 11.0,
+        "is_bold": false,
+        "fonts": [
+          "NimbusSans-Regular"
+        ],
+        "y0": 44.27,
+        "y1": 59.39
+      },
+      "tables": [],
+      "table_count": 0,
+      "pdfplumber_char_count": 81,
+      "render_filename": "v2_page_7.png",
+      "render_path": "renders/v2_page_7.png"
+    }
+  ]
+}
